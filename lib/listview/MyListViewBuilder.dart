@@ -17,6 +17,7 @@ final List<String> strItems = <String>[
   '图标_ac_unit',
 ];
 
+/// ListView.builder 适合数据多的时候使用
 class MyListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

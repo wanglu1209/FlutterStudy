@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// 该文件展示了如何用 ListTile 和 用构造方法来构建ListView
 class MyListTile extends StatelessWidget {
 // 字段意思和数据转载自：https://www.jianshu.com/p/d8755183656b
 
