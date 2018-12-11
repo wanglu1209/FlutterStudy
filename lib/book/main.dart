@@ -1,4 +1,3 @@
-import 'package:FlutterStudy/book/ConstrainedBoxDemo.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(new MyApp());
@@ -33,6 +32,25 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: new AppBar(
           title: new Text(widget.title),
         ),
-        body: ConstrainedBoxDemo());
+        body: Center(
+          child: DefaultTextStyle(
+              style: TextStyle(color: Colors.white, fontSize: 18.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  RaisedButton(
+                    onPressed: () {},
+                    colorBrightness: Brightness.dark,
+                    padding:
+                        EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
+                    color: Colors.blue,
+                    child: Text(
+                      'Single Child Scroll Widget',
+                      style: TextStyle(fontSize: 18),
+                    ),
+                  )
+                ],
+              )),
+        ));
   }
 }
