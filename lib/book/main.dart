@@ -1,6 +1,5 @@
+import 'package:FlutterStudy/book/ConstrainedBoxDemo.dart';
 import 'package:flutter/material.dart';
-
-import 'FormTestRoute.dart';
 
 void main() => runApp(new MyApp());
 
@@ -30,6 +29,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     var _unameController = TextEditingController();
 
-    return FormTestRoute();
+    return new Scaffold(
+        appBar: new AppBar(
+          title: new Text(widget.title),
+        ),
+        body: ConstrainedBoxDemo());
   }
 }
