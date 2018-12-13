@@ -1,6 +1,9 @@
 import 'package:FlutterStudy/book/CustomScrollViewDemo.dart';
 import 'package:FlutterStudy/book/MainNavigatorButton.dart';
+import 'package:FlutterStudy/book/ScrollControllerDemoRoute.dart';
+import 'package:FlutterStudy/book/ScrollNotificationDemo.dart';
 import 'package:FlutterStudy/book/SingleChildScrollViewDemo.dart';
+import 'package:FlutterStudy/book/WillPopScopeDemo.dart';
 import 'package:FlutterStudy/book/infiniteListView.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: '首页'),
     );
   }
 }
@@ -33,7 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text(widget.title),
+          title: new Text(
+            widget.title,
+            style: TextStyle(fontSize: 16),
+          ),
         ),
         body: SingleChildScrollView(
           child: Center(
@@ -42,16 +48,34 @@ class _MyHomePageState extends State<MyHomePage> {
               MainNavigatorButton('Single Child Scroll Widget',
                   widget: SingleChildScrollViewDemoRoute()),
               Container(
-                  margin: EdgeInsets.only(top: 10.0),
+                  margin: EdgeInsets.only(top: 5.0),
                   child: MainNavigatorButton(
                     'InfiniteListView',
                     widget: InfiniteListView(),
                   )),
               Container(
-                  margin: EdgeInsets.only(top: 10.0),
+                  margin: EdgeInsets.only(top: 5.0),
                   child: MainNavigatorButton(
                     'CustomScrollViewDemo',
                     widget: CustomScrollViewDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'ScrollControllerDemo',
+                    widget: ScrollControllerDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'ScrollNotificationDemo',
+                    widget: ScrollNotificationDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'WillPopScopeDemo',
+                    widget: WillPopScopeDemo(),
                   )),
             ],
           )),

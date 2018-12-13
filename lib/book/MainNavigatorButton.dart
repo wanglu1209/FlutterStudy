@@ -21,11 +21,11 @@ class _MainNavigatorButtonState extends State<MainNavigatorButton> {
           }));
       },
       colorBrightness: Brightness.dark,
-      padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
+      padding: EdgeInsets.symmetric(vertical: 6.0, horizontal: 12.0),
       color: Colors.blue,
       child: Text(
         widget.text,
-        style: TextStyle(fontSize: 18),
+        style: TextStyle(fontSize: 14.0),
       ),
     );
   }
