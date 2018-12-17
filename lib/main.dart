@@ -1,4 +1,15 @@
+import 'package:FlutterStudy/book/BothGestureDemo.dart';
 import 'package:FlutterStudy/book/CustomScrollViewDemo.dart';
+import 'package:FlutterStudy/book/EventBusDemoRouteA.dart';
+import 'package:FlutterStudy/book/GestureDetectorDemo.dart';
+import 'package:FlutterStudy/book/GestureDragDemo.dart';
+import 'package:FlutterStudy/book/GestureDragVertical.dart';
+import 'package:FlutterStudy/book/GestureRecognizerDemo.dart';
+import 'package:FlutterStudy/book/GestureScaleDemo.dart';
+import 'package:FlutterStudy/book/IgnorePointerDemo.dart';
+import 'package:FlutterStudy/book/InheritedWidgetDemoRoute.dart';
+import 'package:FlutterStudy/book/ListenerBehaviorDemo.dart';
+import 'package:FlutterStudy/book/ListenerDemo.dart';
 import 'package:FlutterStudy/book/MainNavigatorButton.dart';
 import 'package:FlutterStudy/book/ScrollControllerDemoRoute.dart';
 import 'package:FlutterStudy/book/ScrollNotificationDemo.dart';
@@ -76,6 +87,72 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: MainNavigatorButton(
                     'WillPopScopeDemo',
                     widget: WillPopScopeDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'ShareDataWidgetDemo',
+                    widget: InheritedWidgetDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'ListenerDemo',
+                    widget: ListenerDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'ListenerBehaviorDemo',
+                    widget: ListenerBehaviorDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'IgnorePointerDemo',
+                    widget: IgnorePointerDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'GestureDetectorDemo',
+                    widget: GestureDetectorDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'GestureDragDemo',
+                    widget: GestureDragDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'GestureDragVertical',
+                    widget: GestureDragVertical(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'GestureScaleDemo',
+                    widget: GestureScaleDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'GestureRecognizerDemo',
+                    widget: GestureRecognizerDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'BothGestureDemo',
+                    widget: BothGestureDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'EventBusDemoRouteA',
+                    widget: EventBusDemoRouteA(),
                   )),
             ],
           )),
