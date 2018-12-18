@@ -6,14 +6,19 @@ import 'package:FlutterStudy/book/GestureDragDemo.dart';
 import 'package:FlutterStudy/book/GestureDragVertical.dart';
 import 'package:FlutterStudy/book/GestureRecognizerDemo.dart';
 import 'package:FlutterStudy/book/GestureScaleDemo.dart';
+import 'package:FlutterStudy/book/HeroAnimationDemo.dart';
 import 'package:FlutterStudy/book/IgnorePointerDemo.dart';
 import 'package:FlutterStudy/book/InheritedWidgetDemoRoute.dart';
 import 'package:FlutterStudy/book/ListenerBehaviorDemo.dart';
 import 'package:FlutterStudy/book/ListenerDemo.dart';
 import 'package:FlutterStudy/book/MainNavigatorButton.dart';
+import 'package:FlutterStudy/book/NotificationDemo.dart';
+import 'package:FlutterStudy/book/NotificationFirstDemo.dart';
+import 'package:FlutterStudy/book/ScaleAnimDemo.dart';
 import 'package:FlutterStudy/book/ScrollControllerDemoRoute.dart';
 import 'package:FlutterStudy/book/ScrollNotificationDemo.dart';
 import 'package:FlutterStudy/book/SingleChildScrollViewDemo.dart';
+import 'package:FlutterStudy/book/StaggerDemo.dart';
 import 'package:FlutterStudy/book/WillPopScopeDemo.dart';
 import 'package:FlutterStudy/book/infiniteListView.dart';
 import 'package:flutter/material.dart';
@@ -153,6 +158,36 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: MainNavigatorButton(
                     'EventBusDemoRouteA',
                     widget: EventBusDemoRouteA(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'NotificationFirstDemo',
+                    widget: NotificationFirstDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'NotificationDemo',
+                    widget: NotificationDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'ScaleAnimDemo',
+                    widget: ScaleAnimDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'HeroAnimationDemo',
+                    widget: HeroAnimationDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'StaggerDemo',
+                    widget: StaggerDemo(),
                   )),
             ],
           )),
