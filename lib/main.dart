@@ -1,11 +1,13 @@
 import 'package:FlutterStudy/book/BothGestureDemo.dart';
 import 'package:FlutterStudy/book/CustomScrollViewDemo.dart';
 import 'package:FlutterStudy/book/EventBusDemoRouteA.dart';
+import 'package:FlutterStudy/book/FileOperationRoute.dart';
 import 'package:FlutterStudy/book/GestureDetectorDemo.dart';
 import 'package:FlutterStudy/book/GestureDragDemo.dart';
 import 'package:FlutterStudy/book/GestureDragVertical.dart';
 import 'package:FlutterStudy/book/GestureRecognizerDemo.dart';
 import 'package:FlutterStudy/book/GestureScaleDemo.dart';
+import 'package:FlutterStudy/book/GradientButtonRoute.dart';
 import 'package:FlutterStudy/book/HeroAnimationDemo.dart';
 import 'package:FlutterStudy/book/IgnorePointerDemo.dart';
 import 'package:FlutterStudy/book/InheritedWidgetDemoRoute.dart';
@@ -188,6 +190,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: MainNavigatorButton(
                     'StaggerDemo',
                     widget: StaggerDemo(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'GradientButtonRoute',
+                    widget: GradientButtonRoute(),
+                  )),
+              Container(
+                  margin: EdgeInsets.only(top: 5.0),
+                  child: MainNavigatorButton(
+                    'FileOperationRoute',
+                    widget: FileOperationRoute(),
                   )),
             ],
           )),
